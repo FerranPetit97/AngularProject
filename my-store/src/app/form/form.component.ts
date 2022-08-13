@@ -11,6 +11,9 @@ export class FormComponent {
     email: '',
     password: '',
   };
+  submitValidator() {
+    console.log('Hola muy buenas dias');
+  }
   onRegister() {
     console.log(this.register);
   }
