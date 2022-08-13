@@ -1,5 +1,6 @@
-form {
+* {
   font-weight: bold;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
 }
 
 .container {
@@ -22,6 +23,17 @@ form {
   background-color: rgba(168, 168, 168, 0.096);
 }
 
+.input-group input:focus {
+  border-color: rgba(168, 168, 168, 0.253);
+  background-color: rgba(168, 168, 168, 0.096);
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(131, 130, 130, 0.253);
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
 input:focus::-webkit-input-placeholder {
   opacity: 0;
 }
@@ -40,10 +52,14 @@ input:focus:-moz-placeholder {
 
 .input-group button {
   color: white;
-  border: 1px solid hsl(130.5, 30.77%, 74.51%);
-  background-color: hsl(130.5, 30.77%, 74.51%);
+  border: 1px solid rgb(138, 231, 155);
+  background-color: rgb(138, 231, 155);
   border-radius: 10px;
   height: 55px;
-  &.invalid {
+  cursor: pointer;
+  &:disabled {
+    border: 1px solid hsl(130.5, 30.77%, 74.51%);
+    background-color: hsl(130.5, 30.77%, 74.51%);
+    cursor: auto;
   }
 }
